@@ -7,8 +7,8 @@ const options = {
   url: BASE_URL,
   params: {locale: 'en-US', per_page: '15', page: '1'},
   headers: {
-    Authorization: 'UUDwVmjFV5dww3RTGm8Qs8uQEQuEnCyA1VgngxA1TKh6irvbHNsAuOOX',
-    'X-RapidAPI-Key': '603a07c69cmshd4daa956a1c43b5p1adcbcjsn2f7171c64889',
+    Authorization: process.env.REACT_APP_PEXELS_API_KEY,
+    'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
     'X-RapidAPI-Host': 'PexelsdimasV1.p.rapidapi.com'
   }
 };
